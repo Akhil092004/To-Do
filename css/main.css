@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Moirai;
+    src: url(../fonts/MoiraiOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.input-Container{
+    height: 150px;
+    width: 700px;;
+    margin:35px auto 0 auto;
+    padding: 0px 0 30px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e9c46a;
+    color:#cf4623;
+    font-size: 40px;
+}
+
+.heading{
+    height: 70px;
+    width: 700px;
+    background-color:#f4a261;
+    border-radius:20px ;
+    padding: 5px 0 20px 0;
+    font-family: Moirai;
+}
+
+
+.input{
+    margin-top: 26px;
+    margin-right: 10px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.main-input{
+    background-color: #e4d2be;
+    border-radius: 10px;
+    border: 3px solid #e2b545;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    
+}
+
+.input #task{
+    width:450px;
+    height: 30px;
+    padding-left: 8px;
+    background-color: #e4d2be;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Roboto ;
+}
+
+#input-date{
+    width: 110px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.input button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e2b545 ;
+}
+
+.display{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+.task{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 10px;
+    background-color: #e9c46a;
+    width: 670px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.task button{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.task button:hover{
+    background-color: #cba032;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.task button img{
+    z-index:2;
+    height: 25px;
+    pointer-events: none;
+}
+
+.date{
+    position: absolute;
+    font-size: 15px;
+    right:150px;
+}
+.task .txt{
+    position: absolute;
+    left: 20px;
+    max-width: 400px;
+}
+.Task-Checkbox{
+    right :50px;
+}
+.Task-delete{
+    right:0;
+}
